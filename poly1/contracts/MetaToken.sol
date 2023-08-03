@@ -33,6 +33,10 @@ contract MetaToken is ERC721A, Ownable {
         next=start+1;
         return next;
     }
+function promptDescription() public pure returns(string memory,string[5] memory)
+    {
 
+              return ("The Prompts used to generate the images used on Adobe Firefly are:: ",["1.teddy","2. Car","3. eagle","4. golden retriever","5. monkey"]);
+}
 
 }

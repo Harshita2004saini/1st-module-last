@@ -8,10 +8,10 @@ const hre = require("hardhat");
 const fxRootContractABI = require("../fxRootContractABI.json");
 const tokenContractJSON = require("../artifacts/contracts/MetaToken.sol/MetaToken.json");
 
-const tokenAddress = "0xa03793D7C70A0FC59a08bA8370Db0d70b057BCF9"; // place your erc20 contract address here
+const tokenAddress = "0x0ab0468ED4764EAf7876e5288827106e486383F3"; // place your erc20 contract address here
 const tokenABI = tokenContractJSON.abi;
 const fxERC721RootAddress = "0xF9bc4a80464E48369303196645e876c8C7D972de";
-const walletAddress = "0xbEEfeA95ec64eAdfdb46733fA435fe8C72E73A61"; 
+const walletAddress = "0xcC41179596B780Fe3746CA6008dfc33eC35Aaac5"; 
 async function main() {
 
     const tokenContract = await hre.ethers.getContractAt(tokenABI, tokenAddress);
